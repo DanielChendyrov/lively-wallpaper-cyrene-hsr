@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cyrene Clock</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Video background layer -->
+    <div class="video-background" aria-hidden="true">
+      <video
+        id="bg-video"
+        loop
+        autoplay
+        playsinline
+        preload="auto"
+      >
+        <source src="live-wallpaper-cyrene.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <!-- Clock overlay layer -->
+    <div class="clock-container">
+      <div class="clock" role="timer" aria-label="Current time">
+        <div class="clock__time" id="clock-time">--:--</div>
+        <div class="clock__date" id="clock-date">---</div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
